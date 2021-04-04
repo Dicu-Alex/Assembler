@@ -15,6 +15,8 @@ namespace Assembler
         public Form1()
         {
             InitializeComponent();
+
+            //Hello from Dicu's side
         }
     }
 }
