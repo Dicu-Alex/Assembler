@@ -1,0 +1,9 @@
+D:\Facultate\Anul 3\Sem2\Assembler\Assembler\Assembler\Assembler\bin\Debug\Assembler.exe.config
+D:\Facultate\Anul 3\Sem2\Assembler\Assembler\Assembler\Assembler\bin\Debug\Assembler.exe
+D:\Facultate\Anul 3\Sem2\Assembler\Assembler\Assembler\Assembler\bin\Debug\Assembler.pdb
+D:\Facultate\Anul 3\Sem2\Assembler\Assembler\Assembler\Assembler\obj\Debug\Assembler.csprojAssemblyReference.cache
+D:\Facultate\Anul 3\Sem2\Assembler\Assembler\Assembler\Assembler\obj\Debug\Assembler.Properties.Resources.resources
+D:\Facultate\Anul 3\Sem2\Assembler\Assembler\Assembler\Assembler\obj\Debug\Assembler.csproj.GenerateResource.cache
+D:\Facultate\Anul 3\Sem2\Assembler\Assembler\Assembler\Assembler\obj\Debug\Assembler.csproj.CoreCompileInputs.cache
+D:\Facultate\Anul 3\Sem2\Assembler\Assembler\Assembler\Assembler\obj\Debug\Assembler.exe
+D:\Facultate\Anul 3\Sem2\Assembler\Assembler\Assembler\Assembler\obj\Debug\Assembler.pdb
