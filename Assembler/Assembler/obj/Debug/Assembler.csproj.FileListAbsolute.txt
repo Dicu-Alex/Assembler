@@ -7,3 +7,12 @@ D:\Facultate\Anul 3\Sem2\Assembler\Assembler\Assembler\Assembler\obj\Debug\Assem
 D:\Facultate\Anul 3\Sem2\Assembler\Assembler\Assembler\Assembler\obj\Debug\Assembler.csproj.CoreCompileInputs.cache
 D:\Facultate\Anul 3\Sem2\Assembler\Assembler\Assembler\Assembler\obj\Debug\Assembler.exe
 D:\Facultate\Anul 3\Sem2\Assembler\Assembler\Assembler\Assembler\obj\Debug\Assembler.pdb
+C:\Facultate\AssemblerAC\Assembler\Assembler\Assembler\bin\Debug\Assembler.exe.config
+C:\Facultate\AssemblerAC\Assembler\Assembler\Assembler\bin\Debug\Assembler.exe
+C:\Facultate\AssemblerAC\Assembler\Assembler\Assembler\bin\Debug\Assembler.pdb
+C:\Facultate\AssemblerAC\Assembler\Assembler\Assembler\obj\Debug\Assembler.csprojAssemblyReference.cache
+C:\Facultate\AssemblerAC\Assembler\Assembler\Assembler\obj\Debug\Assembler.Properties.Resources.resources
+C:\Facultate\AssemblerAC\Assembler\Assembler\Assembler\obj\Debug\Assembler.csproj.GenerateResource.cache
+C:\Facultate\AssemblerAC\Assembler\Assembler\Assembler\obj\Debug\Assembler.csproj.CoreCompileInputs.cache
+C:\Facultate\AssemblerAC\Assembler\Assembler\Assembler\obj\Debug\Assembler.exe
+C:\Facultate\AssemblerAC\Assembler\Assembler\Assembler\obj\Debug\Assembler.pdb

@@ -17,6 +17,7 @@ namespace Assembler
             InitializeComponent();
 
             //Hello from Dicu's side
+            //Hello ! -.-
         }
     }
 }
