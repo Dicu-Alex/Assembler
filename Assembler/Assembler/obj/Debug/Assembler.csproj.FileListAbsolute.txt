@@ -16,3 +16,13 @@ C:\Facultate\AssemblerAC\Assembler\Assembler\Assembler\obj\Debug\Assembler.cspro
 C:\Facultate\AssemblerAC\Assembler\Assembler\Assembler\obj\Debug\Assembler.csproj.CoreCompileInputs.cache
 C:\Facultate\AssemblerAC\Assembler\Assembler\Assembler\obj\Debug\Assembler.exe
 C:\Facultate\AssemblerAC\Assembler\Assembler\Assembler\obj\Debug\Assembler.pdb
+C:\Users\n_ana\Documents\Anul III\Semestrul II\Arhitectura calculatoarelor\Proiect\Assembler\Assembler\Assembler\bin\Debug\Assembler.exe.config
+C:\Users\n_ana\Documents\Anul III\Semestrul II\Arhitectura calculatoarelor\Proiect\Assembler\Assembler\Assembler\bin\Debug\Assembler.exe
+C:\Users\n_ana\Documents\Anul III\Semestrul II\Arhitectura calculatoarelor\Proiect\Assembler\Assembler\Assembler\bin\Debug\Assembler.pdb
+C:\Users\n_ana\Documents\Anul III\Semestrul II\Arhitectura calculatoarelor\Proiect\Assembler\Assembler\Assembler\obj\Debug\Assembler.csprojAssemblyReference.cache
+C:\Users\n_ana\Documents\Anul III\Semestrul II\Arhitectura calculatoarelor\Proiect\Assembler\Assembler\Assembler\obj\Debug\Assembler.Form1.resources
+C:\Users\n_ana\Documents\Anul III\Semestrul II\Arhitectura calculatoarelor\Proiect\Assembler\Assembler\Assembler\obj\Debug\Assembler.Properties.Resources.resources
+C:\Users\n_ana\Documents\Anul III\Semestrul II\Arhitectura calculatoarelor\Proiect\Assembler\Assembler\Assembler\obj\Debug\Assembler.csproj.GenerateResource.cache
+C:\Users\n_ana\Documents\Anul III\Semestrul II\Arhitectura calculatoarelor\Proiect\Assembler\Assembler\Assembler\obj\Debug\Assembler.csproj.CoreCompileInputs.cache
+C:\Users\n_ana\Documents\Anul III\Semestrul II\Arhitectura calculatoarelor\Proiect\Assembler\Assembler\Assembler\obj\Debug\Assembler.exe
+C:\Users\n_ana\Documents\Anul III\Semestrul II\Arhitectura calculatoarelor\Proiect\Assembler\Assembler\Assembler\obj\Debug\Assembler.pdb
