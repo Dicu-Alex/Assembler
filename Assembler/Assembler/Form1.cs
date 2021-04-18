@@ -15,6 +15,8 @@ namespace Assembler
     public partial class Form1 : Form
     {
         private String filename;
+        List<String> asmElements = new List<String>();
+        string[] registers = new string[16];
 
         public Form1()
         {
@@ -53,16 +55,43 @@ namespace Assembler
             }
         }
 
-        private int MOV(int x, int y) {
+        private string mov(string x, string y) {
 
             x = y;
 
             return x;
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private int NOP()
         {
+            return 0;
+        }
 
+        private string Instruction(string instr_name)
+        {
+            string var1 = "1", var2 = "2", rez;
+
+            const string MOV = "MOV";
+
+            switch (instr_name)
+            {
+                case MOV:
+                    {
+                        rez = mov(var1, var2);
+                        executeText.Text = rez.ToString();
+                        return rez;
+                    }
+                    break;
+
+                default:
+                    {
+                        while (true)
+                        {
+                            NOP();
+                        }
+                    }
+                    break;
+            }
         }
 
         private void btnParse_Click(object sender, EventArgs e)
@@ -72,7 +101,7 @@ namespace Assembler
                 /* local variable used for debugging only */
                 int lineCounter = 0;
                 /* List which will store each token (element) read from ASM file */
-                List<String> asmElements = new List<String>();
+               
                 /* Create a parser object used for ASM file
                     REMEMBER: this parser can be used for all kind of text files!!!
                  */
@@ -171,13 +200,40 @@ namespace Assembler
 
         private void btnExecute_Click(object sender, EventArgs e)
         {
-            int var1 = 1, var2 = 1;
+            int poz = 0;
 
-            int rez;
+            foreach (string instr_name in asmElements)
+            {
+                for (int i = 0; i < 10; i++)
+                {
 
-            rez = MOV(var1, var2);
+                    string val = i.ToString();
 
-            executeText.Text = rez.ToString();
+                    if (instr_name == val)
+                    {
+                        registers[poz] = instr_name;
+                        poz++;
+
+                        if (poz == registers.Length)
+                        {
+                            for (int j = registers.Length - 1; j >= 0; j--)
+                            {
+                                executeText.Text = registers[j];
+                            }
+                        }
+                    }
+                }
+
+                if (instr_name == "MOV")
+                {
+                    Instruction(instr_name);
+                }
+            }
+
+            for (int j = registers.Length - 1; j >= 0; j--)
+            {
+                executeText.Text = registers[j] + "\r\n";
+            }
         }
     }
 }
