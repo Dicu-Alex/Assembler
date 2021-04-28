@@ -7,6 +7,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,7 +17,28 @@ namespace Assembler
     {
         private String filename;
         List<String> asmElements = new List<String>();
-        string[] registers = new string[16];
+        string[] register = new string[16];
+
+        enum registers
+        {
+            AX, AH, AL, 
+            BX, BH, BL,
+            CX, CH, CL,
+            DX, DH, DL,
+            SI, DI,
+            EX
+        }
+
+        enum segment
+        {
+            ES, CS, DS, SS
+        }
+
+        enum pointer
+        {
+            BP, SP, IP, PC 
+        }
+
 
         public Form1()
         {
@@ -62,36 +84,37 @@ namespace Assembler
             return x;
         }
 
-        private int NOP()
+        private int nop()
         {
+            Thread.Sleep(10000);
+            
             return 0;
         }
 
         private string Instruction(string instr_name)
         {
-            string var1 = "1", var2 = "2", rez;
-
             const string MOV = "MOV";
+            const string NOP = "NOP";
 
             switch (instr_name)
             {
                 case MOV:
                     {
-                        rez = mov(var1, var2);
-                        executeText.Text = rez.ToString();
-                        return rez;
-                    }
-                    break;
+                        register[2] = mov(register[0], register[1]);
+                        executeText.AppendText(register[2].ToString() + Environment.NewLine);
 
-                default:
-                    {
-                        while (true)
-                        {
-                            NOP();
-                        }
+                        return register[2];
                     }
-                    break;
+
+                case NOP:
+                    {
+                        nop();
+
+                        return "NOP";
+                    }
             }
+
+            return "End the process!";
         }
 
         private void btnParse_Click(object sender, EventArgs e)
@@ -200,25 +223,25 @@ namespace Assembler
 
         private void btnExecute_Click(object sender, EventArgs e)
         {
+            
             int poz = 0;
 
             foreach (string instr_name in asmElements)
             {
                 for (int i = 0; i < 10; i++)
                 {
-
                     string val = i.ToString();
 
                     if (instr_name == val)
                     {
-                        registers[poz] = instr_name;
+                        register[poz] = instr_name;
                         poz++;
 
-                        if (poz == registers.Length)
+                        if (poz == register.Length)
                         {
-                            for (int j = registers.Length - 1; j >= 0; j--)
+                            for (int j = 0; j < register.Length; j++)
                             {
-                                executeText.Text = registers[j];
+                                executeText.AppendText(register[j] + Environment.NewLine);
                             }
                         }
                     }
@@ -228,11 +251,21 @@ namespace Assembler
                 {
                     Instruction(instr_name);
                 }
+
+                if (instr_name == "NOP")
+                {
+                    Instruction(instr_name);
+                }
             }
 
-            for (int j = registers.Length - 1; j >= 0; j--)
+            executeText.AppendText("Register: ");
+
+            for (int j = 0; j < register.Length; j++)
             {
-                executeText.Text = registers[j] + "\r\n";
+                if (register[j] != null)
+                {
+                    executeText.AppendText(register[j] + ", ");
+                }
             }
         }
     }

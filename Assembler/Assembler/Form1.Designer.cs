@@ -90,6 +90,7 @@
             // 
             // executeText
             // 
+            this.executeText.AcceptsReturn = true;
             this.executeText.Location = new System.Drawing.Point(426, 12);
             this.executeText.Multiline = true;
             this.executeText.Name = "executeText";
